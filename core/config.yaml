@@ -1,8 +1,0 @@
-# OpenClaw 配置
-models:
-  defaults:
-    model: 'deepseek/deepseek-chat'
-    fallbacks:
-      - 'openai/gpt-4o-mini'
-      - 'ollama/qwen:7b'
-      - 'anthropic/claude-sonnet-4-6'
