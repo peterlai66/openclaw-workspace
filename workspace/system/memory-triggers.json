@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "created": "2026-04-04",
+  "description": "記憶觸發規則系統 - 防止忘記重要學習",
+  
+  "triggers": [
+    {
+      "trigger_word": "cron",
+      "response": "用task系統，不是cron",
+      "action": "立即使用sessions_spawn而不是cron",
+      "priority": "high",
+      "learned_from": "2026-04-04 多次cron規劃錯誤"
+    },
+    {
+      "trigger_word": "規劃",
+      "response": "不做行程規劃，立即執行",
+      "action": "直接行動，不規劃時間表",
+      "priority": "critical",
+      "learned_from": "2026-04-04 多次規劃詞彙錯誤"
+    },
+    {
+      "trigger_word": "確認",
+      "response": "不用等你確認，直接執行",
+      "action": "主動行動，事後回報",
+      "priority": "high",
+      "learned_from": "等待確認導致效率低下"
+    },
+    {
+      "trigger_word": "分析",
+      "response": "不分析等待，立即執行",
+      "action": "執行中分析，不是分析後執行",
+      "priority": "medium",
+      "learned_from": "過度分析導致延遲"
+    },
+    {
+      "trigger_word": "檢查",
+      "response": "等待自動通知，不是手動檢查",
+      "action": "建立監控系統自動檢查",
+      "priority": "medium",
+      "learned_from": "手動檢查效率低下"
+    },
+    {
+      "trigger_word": "分鐘後",
+      "response": "立即記錄到時間承諾系統",
+      "action": "記錄到time-promises.md並建立提醒",
+      "priority": "critical",
+      "learned_from": "時間承諾經常忘記"
+    },
+    {
+      "trigger_word": "本週",
+      "response": "立即執行，不規劃本週",
+      "action": "現在就做，不分本週下週",
+      "priority": "critical",
+      "learned_from": "2026-04-04 多次本週規劃錯誤"
+    },
+    {
+      "trigger_word": "下個月",
+      "response": "立即執行，不規劃下個月",
+      "action": "現在就做，不分這個月下個月",
+      "priority": "critical",
+      "learned_from": "2026-04-04 多次下個月規劃錯誤"
+    },
+    {
+      "trigger_word": "明天",
+      "response": "現在就做，不等明天",
+      "action": "立即執行，不拖延到明天",
+      "priority": "high",
+      "learned_from": "拖延到明天經常忘記"
+    },
+    {
+      "trigger_word": "建議",
+      "response": "直接執行，不給建議",
+      "action": "行動代替建議",
+      "priority": "medium",
+      "learned_from": "建議多行動少"
+    }
+  ],
+  
+  "behavior_rules": [
+    {
+      "rule": "每次說「X分鐘後」必須記錄到時間承諾系統",
+      "action": "自動記錄到time-promises.md",
+      "penalty": "如果忘記，記錄嚴重錯誤"
+    },
+    {
+      "rule": "每次創建任務必須設定正確的通知策略",
+      "action": "使用done_only通知，不讓用戶等待",
+      "penalty": "如果忘記，重新學習通知系統"
+    },
+    {
+      "rule": "每次承諾回報必須建立實際的提醒機制",
+      "action": "建立具體的提醒觸發",
+      "penalty": "如果忘記，記錄承諾違反"
+    },
+    {
+      "rule": "每次違反原則必須立即自我修正並記錄學習",
+      "action": "記錄到memory/YYYY-MM-DD.md",
+      "penalty": "如果不修正，升級為系統錯誤"
+    }
+  ],
+  
+  "enforcement": {
+    "session_startup": "必須執行session-startup.sh",
+    "daily_review": "每天檢查記憶觸發遵守情況",
+    "error_tracking": "記錄所有觸發違反事件",
+    "continuous_improvement": "基於違反事件優化規則"
+  }
+}

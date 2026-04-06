@@ -1,0 +1,19 @@
+{
+  "timezone": "Asia/Taipei",
+  "jobs": [
+    {
+      "id": "daily_market",
+      "cron": "0 16 * * *",
+      "task": "market",
+      "window": ["15:00", "22:00"],
+      "channel": "discord:market"
+    },
+    {
+      "id": "daily_ai",
+      "cron": "0 20 * * *",
+      "task": "ai",
+      "window": ["18:00", "24:00"],
+      "channel": "telegram:ai"
+    }
+  ]
+}

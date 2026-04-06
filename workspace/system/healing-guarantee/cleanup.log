@@ -1,0 +1,46 @@
+Invalid config at /home/pclaw/.openclaw/openclaw.json:\n- channels.discord: Unrecognized keys: "mentionless", "directResponse"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - channels.discord: Unrecognized keys: "mentionless", "directResponse"
+Run: openclaw doctor --fix
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+Invalid config at /home/pclaw/.openclaw/openclaw.json:\n- channels.discord: Unrecognized keys: "mentionless", "directResponse"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - channels.discord: Unrecognized keys: "mentionless", "directResponse"
+Run: openclaw doctor --fix
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found
+./scripts/healing-guarantee-simple.sh: line 58: openclaw: command not found

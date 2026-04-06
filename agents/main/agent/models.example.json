@@ -1,0 +1,446 @@
+{
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434",
+      "apiKey": "OLLAMA_API_KEY",
+      "api": "ollama",
+      "models": [
+        {
+          "id": "glm-4.7-flash",
+          "name": "glm-4.7-flash",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 128000,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "qwen2.5:14b",
+          "name": "qwen2.5:14b",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "qwen2.5:latest",
+          "name": "qwen2.5:latest",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "deepseek-coder:6.7b-instruct-q4_K_M",
+          "name": "deepseek-coder:6.7b-instruct-q4_K_M",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 16384,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "jcai/llama3-taide-lx-8b-chat-alpha1:q4_K_M",
+          "name": "jcai/llama3-taide-lx-8b-chat-alpha1:q4_K_M",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 8192,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "qwen2.5:7b-instruct-q4_K_M",
+          "name": "qwen2.5:7b-instruct-q4_K_M",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "glm-4.7-flash:latest",
+          "name": "glm-4.7-flash:latest",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 202752,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "llama2-chinese:latest",
+          "name": "llama2-chinese:latest",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 4096,
+          "maxTokens": 4096,
+          "api": "ollama"
+        },
+        {
+          "id": "qwen3:14b",
+          "name": "qwen3:14b",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 40960,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "qwen3.5:latest",
+          "name": "qwen3.5:latest",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 8192,
+          "api": "ollama"
+        },
+        {
+          "id": "mistral:latest",
+          "name": "mistral:latest",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 8192,
+          "api": "ollama"
+        }
+      ]
+    },
+    "deepseek": {
+      "baseUrl": "https://api.deepseek.com",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek Chat",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.28,
+            "output": 0.42,
+            "cacheRead": 0.028,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192,
+          "compat": {
+            "supportsUsageInStreaming": true
+          }
+        },
+        {
+          "id": "deepseek-reasoner",
+          "name": "DeepSeek Reasoner",
+          "api": "openai-completions",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.28,
+            "output": 0.42,
+            "cacheRead": 0.028,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 65536,
+          "compat": {
+            "supportsUsageInStreaming": true
+          }
+        }
+      ],
+      "apiKey": "sk-5cacfb460b654f95b3e0694d9ba80231"
+    },
+    "github-copilot": {
+      "baseUrl": "https://api.individual.githubcopilot.com",
+      "models": []
+    },
+    "groq": {
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "llama-3.3-70b-versatile",
+          "name": "Llama 3.3 70B (Groq)",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        },
+        {
+          "id": "llama-3.1-8b-instant",
+          "name": "Llama 3.1 8B Instant (Groq)",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        },
+        {
+          "id": "qwen-qwq-32b",
+          "name": "Qwen QwQ 32B (Groq)",
+          "api": "openai-completions",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        }
+      ],
+      "apiKey": "REDACTED"
+    },
+    "openrouter": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "auto",
+          "name": "OpenRouter Auto",
+          "reasoning": false,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192
+        },
+        {
+          "id": "openrouter/hunter-alpha",
+          "name": "Hunter Alpha",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1048576,
+          "maxTokens": 65536
+        },
+        {
+          "id": "openrouter/healer-alpha",
+          "name": "Healer Alpha",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 65536
+        }
+      ],
+      "apiKey": "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"
+    },
+    "google": {
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "gemini-2.5-flash-preview-04-17",
+          "name": "Gemini 2.5 Flash",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1048576,
+          "maxTokens": 8192
+        },
+        {
+          "id": "gemini-2.0-flash",
+          "name": "Gemini 2.0 Flash",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1048576,
+          "maxTokens": 8192
+        }
+      ],
+      "apiKey": "AIzaSyCdD9wTMeL-i2oGyT74-tSlKJOw-yHukmo"
+    },
+    "llama-3-1-8b-instant-groq": {
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "apiKey": "REDACTED",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "llama-3.1-8b-instant",
+          "name": "llama-3.1-8b-instant (Custom Provider)",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 16000,
+          "maxTokens": 4096,
+          "api": "openai-completions"
+        }
+      ]
+    }
+  }
+}

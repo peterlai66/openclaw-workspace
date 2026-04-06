@@ -1,0 +1,17 @@
+{
+  "discord": {
+    "dm": {
+      "mode": "control"
+    },
+    "server": {
+      "channels": {
+        "market": "FINANCE_CHANNEL_ID"
+      }
+    }
+  },
+  "telegram": {
+    "dm": {
+      "mode": "ai"
+    }
+  }
+}

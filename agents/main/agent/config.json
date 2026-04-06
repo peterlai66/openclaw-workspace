@@ -1,0 +1,38 @@
+{
+  "name": "main",
+
+  "model": {
+    "default": "llama-3-1-8b-instant-groq/llama-3.1-8b-instant",
+    "fallbacks": [ ],
+    "temperature": 0.3,
+    "maxTokens": 8000
+  },
+
+  "permissions": {
+    "allow_execute": true,
+    "allow_switch_model": true,
+    "admin_access": true
+  },
+
+  "execution": {
+    "mode": "agent", 
+    "auto_run": true,
+    "max_steps": 10,
+    "timeout_ms": 60000
+  },
+
+  "memory": {
+    "enabled": true,
+    "max_history": 50
+  },
+
+  "tools": {
+    "auto_discover": true,
+    "allowed": ["*"],
+    "blocked": []
+  },
+
+  "safety": {
+    "confirm_before_execute": false
+  }
+}

@@ -1,0 +1,34 @@
+# AI 知識發布系統 - 每日更新 (09:00 UTC+8)
+0 1 * * * cd /home/pclaw/.openclaw/workspace/knowledge-publish && python scripts/publish.py daily >> /home/pclaw/.openclaw/workspace/knowledge-publish/logs/daily.log 2>&1
+
+# AI 知識發布系統 - 每週深度文章 (週一 10:00 UTC+8)
+0 2 * * 1 cd /home/pclaw/.openclaw/workspace/knowledge-publish && python scripts/publish.py weekly >> /home/pclaw/.openclaw/workspace/knowledge-publish/logs/weekly.log 2>&1
+
+# AI 知識發布系統 - 每月知識體系 (每月第一天 00:00 UTC+8)
+0 16 1 * * cd /home/pclaw/.openclaw/workspace/knowledge-publish && python scripts/publish.py monthly >> /home/pclaw/.openclaw/workspace/knowledge-publish/logs/monthly.log 2>&1
+
+# AI 知識發布系統 - 每季趨勢報告 (每季第一天 00:00 UTC+8)
+0 16 1 1,4,7,10 * cd /home/pclaw/.openclaw/workspace/knowledge-publish && python scripts/publish.py quarterly >> /home/pclaw/.openclaw/workspace/knowledge-publish/logs/quarterly.log 2>&1
+# OpenClaw 每日工作流
+# 早上8:30 - 研究工作流
+# 下午4:30 - 更新工作流
+# 心跳監控系統 - 每30分鐘檢查
+*/30 * * * * cd /home/pclaw/.openclaw/scripts && python3 simple_heartbeat.py >> /home/pclaw/.openclaw/workspace/logs/heartbeat.log 2>&1
+# 重要狀態 - 每小時整點發送
+0 * * * * cd /home/pclaw/.openclaw/scripts && python3 simple_heartbeat.py | tail -20 >> /home/pclaw/.openclaw/workspace/logs/hourly_status.log 2>&1
+# ====== 活性監控系統 ======
+# 每分鐘 - 活性檢查
+* * * * * cd /home/pclaw/.openclaw/scripts && python3 -c "import os; open('/home/pclaw/.openclaw/workspace/alive_marks/mark_' + str(int(__import__('time').time())) + '_cron.json', 'w').write('{\"timestamp\":' + str(int(__import__('time').time())) + '}')" >> /tmp/cron_alive.log 2>&1
+# 每5分鐘 - 活性報告
+*/5 * * * * cd /home/pclaw/.openclaw/scripts && python3 simple_alive_check.py >> /home/pclaw/.openclaw/workspace/logs/alive_report.log 2>&1
+# 每30分鐘 - 健康檢查
+*/30 * * * * cd /home/pclaw/.openclaw/scripts && python3 simple_heartbeat.py >> /home/pclaw/.openclaw/workspace/logs/heartbeat.log 2>&1
+# 睡前總結 - 每天23:00
+
+# Fast Response Optimizer - Refresh cache every minute
+* * * * * /home/pclaw/.openclaw/workspace/scripts/cron-refresh-cache.sh >/dev/null 2>&1
+0 9 * * * /home/pclaw/.openclaw/workspace/fast-response/scripts/daily_monitor.sh >> /var/log/fast-response/daily-monitor.log 2>&1
+0 * * * * /home/pclaw/.openclaw/workspace/fast-response/scripts/auto_recovery.sh >> /var/log/fast-response/auto-recovery.log 2>&1
+0 2 * * 1 /home/pclaw/.openclaw/workspace/fast-response/scripts/performance_benchmark.sh >> /var/log/fast-response/performance-benchmark.log 2>&1
+0 3 * * 0 /home/pclaw/.openclaw/workspace/fast-response/scripts/system_cleanup.sh >> /var/log/fast-response/system-cleanup.log 2>&1
+0 12 * * 3 /home/pclaw/.openclaw/workspace/fast-response/scripts/lightweight_model_explorer.sh >> /var/log/fast-response/model-exploration.log 2>&1

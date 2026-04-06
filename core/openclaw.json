@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.2",
+    "lastTouchedAt": "2026-04-05T17:20:49.924Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-05T17:20:49.818Z",
+    "lastRunVersion": "2026.4.2",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "secrets": {
+    "providers": {
+      "default": {
+        "source": "env"
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "groq:default": {
+        "provider": "groq",
+        "mode": "api_key"
+      },
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      },
+      "deepseek:default": {
+        "provider": "deepseek",
+        "mode": "api_key"
+      },
+      "openai:default": {
+        "provider": "openai",
+        "mode": "api_key"
+      },
+      "ollama:default": {
+        "provider": "ollama",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "llama-3.3-70b-versatile",
+            "name": "Llama 3.3 70B (Groq)",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "llama-3.1-8b-instant",
+            "name": "Llama 3.1 8B Instant (Groq)",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "qwen-qwq-32b",
+            "name": "Qwen QwQ 32B (Groq)",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ]
+      },
+      "google": {
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "gemini-2.5-flash-preview-04-17",
+            "name": "Gemini 2.5 Flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 1048576,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "gemini-2.0-flash",
+            "name": "Gemini 2.0 Flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 1048576,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ]
+      },
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434",
+        "api": "ollama",
+        "models": [
+          {
+            "id": "glm-4.7-flash",
+            "name": "glm-4.7-flash",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen2.5:14b",
+            "name": "qwen2.5:14b",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen2.5:latest",
+            "name": "qwen2.5:latest",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-coder:6.7b-instruct-q4_K_M",
+            "name": "deepseek-coder:6.7b-instruct-q4_K_M",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16384,
+            "maxTokens": 8192
+          },
+          {
+            "id": "jcai/llama3-taide-lx-8b-chat-alpha1:q4_K_M",
+            "name": "jcai/llama3-taide-lx-8b-chat-alpha1:q4_K_M",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 8192,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen2.5:7b-instruct-q4_K_M",
+            "name": "qwen2.5:7b-instruct-q4_K_M",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 8192
+          },
+          {
+            "id": "glm-4.7-flash:latest",
+            "name": "glm-4.7-flash:latest",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gpt-oss:20b",
+            "name": "gpt-oss:20b",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192
+          },
+          {
+            "id": "llama2-chinese:latest",
+            "name": "llama2-chinese:latest",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 4096,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen3:14b",
+            "name": "qwen3:14b",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 40960,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen3.5:latest",
+            "name": "qwen3.5:latest",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 8192
+          },
+          {
+            "id": "mistral:latest",
+            "name": "mistral:latest",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 8192
+          }
+        ],
+        "apiKey": "OLLAMA_API_KEY"
+      },
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.28,
+              "output": 0.42,
+              "cacheRead": 0.028,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsUsageInStreaming": true
+            }
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "DeepSeek Reasoner",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 65536,
+            "cost": {
+              "input": 0.28,
+              "output": 0.42,
+              "cacheRead": 0.028,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsUsageInStreaming": true
+            }
+          }
+        ]
+      },
+      "llama-3-1-8b-instant-groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "api": "openai-completions",
+        "apiKey": "REDACTED",
+        "models": [
+          {
+            "id": "llama-3.1-8b-instant",
+            "name": "llama-3.1-8b-instant (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "llama-3-1-8b-instant-groq/llama-3.1-8b-instant",
+        "fallbacks": []
+      },
+      "models": {
+        "groq/llama-3.3-70b-versatile": {
+          "alias": "Groq_70B"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "alias": "Groq_8B"
+        },
+        "groq/qwen-qwq-32b": {
+          "alias": "Groq_QwQ"
+        },
+        "ollama/qwen3:14b": {
+          "alias": "Local_Qwen3"
+        },
+        "ollama/qwen2.5:14b": {
+          "alias": "Local_Qwen25"
+        },
+        "ollama/qwen2.5:7b-instruct-q4_K_M": {
+          "alias": "Local_Qwen7B"
+        },
+        "ollama/deepseek-coder:6.7b-instruct-q4_K_M": {
+          "alias": "Local_Coder"
+        },
+        "openai/gpt-4o-mini": {
+          "alias": "GPT_Mini"
+        },
+        "llama-3-1-8b-instant-groq/llama-3.1-8b-instant": {
+          "alias": "Groq_8"
+        }
+      },
+      "heartbeat": {
+        "model": "ollama/qwen2.5:7b-instruct-q4_K_M"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 2,
+        "maxChildrenPerAgent": 4,
+        "model": "google/gemini-2.0-flash",
+        "maxSpawnDepth": 2,
+        "runTimeoutSeconds": 1800
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "name": "main",
+        "workspace": "/home/pclaw/.openclaw/workspace",
+        "agentDir": "/home/pclaw/.openclaw/agents/main/agent",
+        "model": "groq/llama-3.1-8b-instant"
+      },
+      {
+        "id": "ops",
+        "name": "ops",
+        "workspace": "/home/pclaw/.openclaw/workspace-ops",
+        "agentDir": "/home/pclaw/.openclaw/agents/ops/agent",
+        "model": "groq/llama-3.1-8b-instant"
+      },
+      {
+        "id": "market",
+        "name": "market",
+        "workspace": "/home/pclaw/.openclaw/workspace-market",
+        "agentDir": "/home/pclaw/.openclaw/agents/market/agent",
+        "model": "google/gemini-2.0-flash"
+      },
+      {
+        "id": "tech",
+        "name": "tech",
+        "workspace": "/home/pclaw/.openclaw/workspace-tech",
+        "agentDir": "/home/pclaw/.openclaw/agents/tech/agent",
+        "model": "google/gemini-2.0-flash"
+      }
+    ]
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "reload": {
+      "mode": "hybrid",
+      "debounceMs": 300
+    },
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "cb5673137ca176c525d02939525737c5eb0abefca86a622c",
+      "allowTailscale": false
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "controlUi": {
+      "enabled": true,
+      "dangerouslyDisableDeviceAuth": false
+    },
+    "tools": {
+      "allow": [
+        "read",
+        "write",
+        "edit",
+        "exec",
+        "process",
+        "message",
+        "memory_search",
+        "memory_get"
+      ]
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "/home/pclaw/.openclaw/logs/openclaw.log",
+    "maxFileBytes": 10485760
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "botToken": "8537271851:AAGL3WpxTy6R9j4zlyky1vTO3LR0GrfUVGQ"
+    },
+    "discord": {
+      "enabled": true,
+      "token": "REDACTED",
+      "groupPolicy": "allowlist",
+      "guilds": {
+        "*": {}
+      }
+    }
+  }
+}

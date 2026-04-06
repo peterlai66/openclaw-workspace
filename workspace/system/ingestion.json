@@ -1,0 +1,14 @@
+{
+  "market": {
+    "sources": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/^TWII",
+      "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC"
+    ]
+  },
+  "ai": {
+    "sources": [
+      "https://hn.algolia.com/api/v1/search?query=AI",
+      "https://api.github.com/search/repositories?q=AI&sort=stars"
+    ]
+  }
+}

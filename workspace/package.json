@@ -1,0 +1,26 @@
+{
+  "name": "pclaw-workspace",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterlai66/openclaw-workspace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterlai66/openclaw-workspace/issues"
+  },
+  "homepage": "https://github.com/peterlai66/openclaw-workspace#readme",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "node-fetch": "^3.3.2"
+  }
+}

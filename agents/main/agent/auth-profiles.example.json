@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "profiles": {
+    "ollama:default": {
+      "type": "api_key",
+      "provider": "ollama",
+      "key": "ollama-local"
+    },
+    "openai:default": {
+      "type": "api_key",
+      "provider": "openai",
+      "key": "REDACTED"
+    }
+  },
+  "lastGood": {
+    "ollama": "ollama:default",
+    "openai": "openai:default"
+  },
+  "usageStats": {
+    "ollama:default": {
+      "errorCount": 0,
+      "lastUsed": 1775440928857,
+      "lastFailureAt": 1775439220890
+    },
+    "openai:default": {
+      "errorCount": 0,
+      "lastFailureAt": 1775405784916,
+      "lastUsed": 1775439182203
+    }
+  }
+}

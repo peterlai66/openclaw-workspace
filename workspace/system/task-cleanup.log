@@ -1,0 +1,22 @@
+[2026-04-04 12:52:29] 開始task清理檢查...
+[2026-04-04 12:52:35] 當前狀態: 14 個錯誤, 0 個警告
+[2026-04-04 12:52:35] 執行官方維護...
+[2026-04-04 12:52:41] 維護結果: Tasks maintenance (applied): tasks 0 reconcile · 0 cleanup stamp · 0 prune; task-flows 0 reconcile · 0 prune
+Tasks health after apply: 0 queued · 14 running · 14 audit errors · 7 audit warnings
+Tasks health before apply: 14 audit errors · 7 audit warnings
+[2026-04-04 12:52:41] 檢查運行中任務...
+[2026-04-04 12:52:47] 發現 14 個運行中任務
+[2026-04-04 12:52:47] ⚠️ 發現卡住任務: 緊急修復系統工具失敗 (ID: a9835cb2-a5a1-4c84-956f-09f06450a413, 已運行 26小時)
+[2026-04-04 12:52:53] ⏭️ 無法取消: 緊急修復系統工具失敗 (原因: Subagent was not running.)
+[2026-04-04 12:52:53] ⚠️ 發現卡住任務: null (ID: b488bc10-5259-4dd9-925f-1faad447223d, 已運行 26小時)
+[2026-04-04 12:52:59] ⏭️ 無法取消: null (原因: Task runtime does not support cancellation yet.)
+[2026-04-04 12:52:59] 生成清理報告...
+[2026-04-04 12:53:06] 清理完成報告:
+[2026-04-04 12:53:06]   清理前: 14 錯誤, 0 警告
+[2026-04-04 12:53:06]   清理後: 14 錯誤, 0 警告
+[2026-04-04 12:53:06]   減少: 0 錯誤, 0 警告
+[2026-04-04 12:53:06] 建議定期清理機制:
+[2026-04-04 12:53:06]   1. 每小時檢查一次: */60 * * * * /home/pclaw/.openclaw/workspace/cleanup-tasks.sh
+[2026-04-04 12:53:06]   2. 每日深度清理: 0 2 * * * /home/pclaw/.openclaw/workspace/cleanup-tasks.sh --deep
+[2026-04-04 12:53:06]   3. 監控和警報: 錯誤超過10個時發送警報
+[2026-04-04 12:53:06] ✅ task清理完成

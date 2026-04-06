@@ -1,0 +1,95 @@
+{
+  "report_date": "2026-04-03 16:33:44",
+  "market_overview": {
+    "index_value": 32572.43,
+    "index_change": 0.0,
+    "index_change_percent": 0.0,
+    "index_volume": 10200475573,
+    "market_trend": "平盤"
+  },
+  "stocks": {
+    "2330": {
+      "technical": {
+        "current_price": 1810.0,
+        "change_percent": -2.4258760107816713,
+        "volume": 29332490,
+        "ma5": 1805.0,
+        "ma20": 1844.0,
+        "rsi": 43.67816091954023,
+        "support_level": 1760.0,
+        "resistance_level": 1940.0,
+        "trend": "下降"
+      },
+      "realtime": {},
+      "analysis": {
+        "trend_strength": "中等",
+        "rsi_signal": "中性",
+        "ma_signal": "死亡交叉"
+      }
+    },
+    "0050": {
+      "technical": {
+        "current_price": 73.95,
+        "change_percent": -1.9880715705765408,
+        "volume": 113976137,
+        "ma5": 74.13,
+        "ma20": 75.4825,
+        "rsi": 43.93939393939395,
+        "support_level": 72.35,
+        "resistance_level": 78.2,
+        "trend": "下降"
+      },
+      "realtime": {},
+      "analysis": {
+        "trend_strength": "中等",
+        "rsi_signal": "中性",
+        "ma_signal": "死亡交叉"
+      }
+    },
+    "2412": {
+      "technical": {
+        "current_price": 134.0,
+        "change_percent": 0.0,
+        "volume": 7496636,
+        "ma5": 133.8,
+        "ma20": 135.1,
+        "rsi": 38.888888888888886,
+        "support_level": 133.0,
+        "resistance_level": 137.5,
+        "trend": "下降"
+      },
+      "realtime": {},
+      "analysis": {
+        "trend_strength": "弱",
+        "rsi_signal": "中性",
+        "ma_signal": "死亡交叉"
+      }
+    }
+  },
+  "technical_analysis": {},
+  "risk_assessment": {
+    "market_risk": "低",
+    "volatility_risk": "低",
+    "liquidity_risk": "低",
+    "sector_risk": {
+      "semiconductor": "中等",
+      "telecom": "低",
+      "etf": "低"
+    }
+  },
+  "recommendations": {
+    "short_term": [
+      "2330: 持有",
+      "2412: 防守型配置，適合長期持有"
+    ],
+    "medium_term": [
+      "0050: 定期定額投資，分散風險"
+    ],
+    "long_term": [],
+    "general": [
+      "控制單一個股風險，避免過度集中",
+      "保持現金比例10-15%以應對市場波動",
+      "關注成交量變化，確認趨勢有效性"
+    ]
+  }
+}

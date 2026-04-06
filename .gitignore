@@ -1,0 +1,84 @@
+############################
+# Core Git
+############################
+.git
+
+############################
+# Node / Build
+############################
+node_modules/
+dist/
+build/
+coverage/
+.next/
+
+############################
+# OpenClaw Runtime（最關鍵）
+############################
+logs/
+runtime/
+delivery-queue/
+flows/
+tasks/
+memory/
+media/
+subagents/runs.json
+
+############################
+# Sessions（AI 對話狀態）
+############################
+agents/*/sessions/
+
+############################
+# Backups（你現在爆炸的來源）
+############################
+_archived_backups/
+_backup/
+backups/
+
+############################
+# Secrets（絕對不能上）
+############################
+.env
+.env.*
+*.secure
+*.secure.json
+
+credentials/
+devices/
+identity/
+telegram/
+
+workspace/.secure/
+
+# Agent auth / model keys（補這段）
+agents/*/agent/auth-profiles.json
+agents/*/agent/models.json
+############################
+# Database（全部排除）
+############################
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+############################
+# Generated / Output
+############################
+workspace/investment-analysis-output/
+workspace/tw_stock_analysis/
+
+workspace/memory/*.log
+workspace/memory/task-router.log
+workspace/memory/task-router.jsonl
+
+############################
+# Temp / Cache
+############################
+tmp/
+cache/
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
