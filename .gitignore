@@ -82,3 +82,9 @@ cache/
 ############################
 .DS_Store
 Thumbs.db
+
+# local audit artifacts
+OPENCLAW_REPO_BASELINE_REVIEW.txt
+openclaw_audit*.zip
+core/*.bak
+*:Zone.Identifier
